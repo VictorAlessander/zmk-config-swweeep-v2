@@ -33,24 +33,25 @@
 / {
 
     behaviors {
-        hm: homerow_mods {
+        ht: homerow_mods {
+            label = "hold_tap"
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <150>;
+            global-quick-tap;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        hs: homerow_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <175>;
-            flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
     };
 
    keymap {
         compatible = "zmk,keymap";
+        tri_layer = {
+            if-layers = <1 2>;
+            then = <3>;
+        }
+
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
