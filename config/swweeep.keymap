@@ -45,13 +45,16 @@
         };
     };
 
+   conditiona_layers {
+       compatible = "zmk,conditional-layers";
+       tri_layer = {
+           if-layers = <1 2>;
+           then = <3>;
+       };
+   };
+
    keymap {
         compatible = "zmk,keymap";
-        tri_layer = {
-            if-layers = <1 2>;
-            then = <3>;
-        }
-
         default_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
