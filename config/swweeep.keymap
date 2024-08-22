@@ -68,7 +68,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &mo LEF     &kp LGUI   &kp SPACE     &kp ENTER   &kp BSPC   &mo RIG
+                                 &mo LEF     &kp ESC    &kp SPACE     &kp ENTER   &kp BSPC   &mo RIG
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -85,7 +85,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ENTER    │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ENTER
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                 &mo LEF     &kp LGUI   &kp SPACE     &kp ENTER  &kp BSPC    &mo RIG
+                                 &mo LEF     &kp ESC    &kp SPACE     &kp ENTER  &kp BSPC    &mo RIG
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
@@ -100,9 +100,9 @@
             &kp TAB   &kp CAPS   &kp PSCRN  &kp INS     &kp DEL        &kp LARW    &kp DARW   &kp UARW   &kp RARW   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │ HOME     │ PAGE DN  │ PAGE UP  │ END      │
-            &trans    &trans     &trans     &trans      &trans           &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
+            &trans    &trans     &trans     &trans      &trans         &trans     &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                  &trans     &trans     &kp ESC         &trans     &trans     &trans
+                                  &trans     &trans     &trans         &trans     &trans     &trans
         //                      ╰──────────┴──────────┴──────────╯   ╰──────────┴──────────┴──────────╯
             >;
         };
